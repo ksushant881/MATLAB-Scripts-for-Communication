@@ -1,0 +1,12 @@
+syms t q
+x=heaviside(t-3)-heaviside(t-5)
+y=exp(-3*t)*heaviside(t)
+z=int((subs(x,q))*(subs(y,t-q)),q,0,t)
+disp('Output')
+disp(z)
+subplot(3,1,1)
+ezplot(x,[0,10])
+subplot(3,1,2)
+ezplot(y,[-0.005,1])
+subplot(3,1,3)
+ezplot(z,[0,10])
