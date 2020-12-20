@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 fm=25;
-%Sushant_b180062EC
+
 fc=100;
 am=1;
 ac=2;

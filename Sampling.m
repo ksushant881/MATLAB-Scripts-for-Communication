@@ -1,4 +1,3 @@
-%Sushant_b180062EC
 f = 2000;
 T = 1/f;
 tmin = 0;

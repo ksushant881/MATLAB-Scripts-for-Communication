@@ -1,4 +1,3 @@
-%Sushant_b180062EC
 clc;
 close all;
 clear all;
