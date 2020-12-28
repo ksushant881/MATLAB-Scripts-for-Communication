@@ -1,0 +1,24 @@
+%to perform auto corelation
+closeall;
+clearall;
+clc;
+x=input('enter the sequence one');
+n=input('enter sequence interval');
+h=x;
+y=xcorr(x);
+p=(min(n)-max(n):1:max(n)-min(n));
+subplot(3,1,1);
+stem(n,x);
+xlabel('time');
+ylabel('amplitude');
+title('input sequence one');
+subplot(3,1,2);
+stem(n,h);
+xlabel('time');
+ylabel('amplitude');
+title('input sequence two');
+subplot(3,1,3);
+stem(p,y);
+xlabel('time');
+ylabel('amplitude');
+title('output sequence');

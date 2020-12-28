@@ -1,0 +1,25 @@
+%to perform cross correlation
+closeall;
+clearall;
+clc;
+x=input('enter the sequence one');
+n=input('enter sequence interval');
+h=input('enter the sequence two');
+m=input('enter sequence interval');
+y=xcorr(x,h);
+p=(min(n)-max(m):1:max(n)-min(m));
+subplot(3,1,1);
+stem(n,x);
+xlabel('time');
+ylabel('amplitude');
+title('input sequence one');
+subplot(3,1,2);
+stem(m,h);
+xlabel('time');
+ylabel('amplitude');
+title('input sequence two');
+subplot(3,1,3);
+stem(p,y);
+xlabel('time');
+ylabel('amplitude');
+title('output sequence');
